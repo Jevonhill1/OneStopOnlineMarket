@@ -1,25 +1,7 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# OneStopOnlineMarket
+OneStopOnline
+* Is a Api based marketplace.
+* Users can put items in their shopping cart.
+* Users can make purchaces with React Stripe Checkout.
+* Sellers can post items for sale.
+* Sellers can set their own prices.
+* Default testing for database.
