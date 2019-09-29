@@ -1,13 +1,12 @@
 <h2>Categories</h2>
-<%= image_tag("onestop_logo.png") %>
+<%= image_tag src="onestop_logo.png" %>
 <ol>
   <% @categories.each do |category| %>
     <li>
-      
+      <%= link_to category_products_path(category) do %>
         <%= category.title %>
         
       <% end %>
     </li>
   <% end %>
 </ol>
-<% end %>
