@@ -1,8 +1,13 @@
 <h2>Categories</h2>
+<%= image_tag("onestop_logo.png") %>
 <ol>
-  <% categories.each do |category| %>
+  <% @categories.each do |category| %>
     <li>
-      <% category.title %>
+      
+        <%= category.title %>
+        
+      <% end %>
     </li>
   <% end %>
 </ol>
+<% end %>
