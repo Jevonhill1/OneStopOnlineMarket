@@ -1,11 +1,11 @@
-<h2>Categories</h2>
+<h2>Categories (<%= @categories.length %>)</h2>
 <%= image_tag src="onestop_logo.png" %>
 <ol>
   <% @categories.each do |category| %>
     <li>
       <%= link_to category_products_path(category) do %>
         <%= category.title %>
-        
+        (<%= category.products_count %> products)
       <% end %>
     </li>
   <% end %>
