@@ -1,6 +1,7 @@
-<h2>Categories (<%= @categories.length %>)</h2>
 <%= image_tag src="onestop_logo.png" %>
-<ol>
+<h2>Categories (<%= @categories.length %>)</h2>
+
+<ol class="category">
   <% @categories.each do |category| %>
     <li>
       <%= link_to category_products_path(category) do %>

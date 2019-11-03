@@ -1,13 +1,16 @@
+<%= image_tag src="onestop_logo.png" %>
 <h2 class="product">
   <%= link_to "Categories", root_path %> /
   <%= @category.title %> /
   Products
 </h2>
-
+ <div class="container">
+      <div class="card">
+       <div class="card-body">
 <ol class="product-list">
-  <%= @products.each do |product| %>
+  <% @products.each do |product| %>
     <li>
-      <% product.title %> (<%= number_to_currency product.price %>)
+      <%= product.title %> (<%= number_to_currency product.price %>)
 
       <%= form_tag order_items_path do %>
         <%= hidden_field_tag :product_id, product.id %>
@@ -24,3 +27,6 @@
     </li>
   <% end %>
 </ol>
+</div>
+</div>
+</div>
