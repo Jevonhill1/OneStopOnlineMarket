@@ -10,7 +10,9 @@ gem 'rails', '~> 6.0.0.rc2'
 gem 'faker'
 gem 'rspec'
 gem 'hirb'
-
+gem 'devise'
+gem 'devise-bootstrap-views'
+gem 'jquery-rails'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
