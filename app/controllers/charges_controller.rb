@@ -1,7 +1,8 @@
-def new
-end
+class ChargesController < ApplicationController 
+  def new
+  end
 
-def create
+  def create
   @amount = params[:amount]
 
   @amount = @amount.gsub('$', '').gsub(',', '')

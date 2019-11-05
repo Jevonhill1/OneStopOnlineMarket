@@ -31,7 +31,7 @@
   <article>
     <%= hidden_field_tag(:stripeToken) %>
   </article>
-  <button id='purchaseButton'>Donate</button>
+  <button id='purchaseButton'>Purchase</button>
 <% end %>
 
 <script src="https://checkout.stripe.com/checkout.js"></script>
@@ -40,8 +40,8 @@
 var handler = StripeCheckout.configure({
   key: '<%= Rails.configuration.stripe[:publishable_key] %>',
   locale: 'auto',
-  name: 'Sand Castles United',
-  description: 'One-time donation',
+  name: 'OneStopOnline',
+  description: 'One-time purchase',
   token: function(token) {
     $('input#stripeToken').val(token.id);
     $('form').submit();

@@ -1,5 +1,7 @@
 <%= image_tag src="onestop_logo.png" %>
 <h2>Current Cart</h2>
+<%= link_to "Products", root_path %>
+
 
 <table>
   <thead>
@@ -25,3 +27,4 @@
     <% end %>
   </tbody>
 </table>
+<%= link_to "Checkout", new_charge_path %>
