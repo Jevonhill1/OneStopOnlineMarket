@@ -8,4 +8,14 @@ class ApplicationController < ActionController::Base
    @current_cart ||= ShoppingCart.new(token: :cart_token)
   end
   helper_method :current_cart
+
+  private
+ 
+  def by_resource
+    if devise_controller?
+      "devise"
+    else
+      "application"
+    end
+  end
 end

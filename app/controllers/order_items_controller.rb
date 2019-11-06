@@ -1,5 +1,5 @@
 class OrderItemsController < ApplicationController
-
+  skip_before_action :authenticate_user!, only: [:index]
   def index
     @items = current_cart.order.items
   end
@@ -11,6 +11,10 @@ class OrderItemsController < ApplicationController
     )
 
     redirect_to cart_path
+  end
+  
+  def purchase
+    redirect_to new_charges_path
   end
 
   def destroy

@@ -30,6 +30,7 @@ PRODUCTS_COUNT.times do
   product = Product.new(
     title: title,
     price: Faker::Commerce.price
+    image: (https://placeholder.apps.selfip.com/image/250x250/)
   )
 
   num_categories = 1 + rand(MAX_CATEGORIES)
