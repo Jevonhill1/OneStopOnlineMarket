@@ -3,7 +3,7 @@
 <%= link_to "Products", root_path %>
 
 
-<table>
+<table class="container">
   <thead>
     <tr>
       <td><h3>Product</h3></td>
@@ -15,16 +15,23 @@
   <tbody>
     <% @items.each do |item| %>
       <tr>
-        <td><%= item.product.title %></td>
+      <div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      <td><%= item.product.title %></td>
         <td><%= number_to_currency item.price %></td>
         <td><%= item.quantity %></td>
         <td>
           <%= form_for item, method: :delete do |f| %>
-            <%= f.submit "Remove" %>
-          <% end %>
+            <%= f.submit "Remove"%>
+            <% end %>
+    </div>
+  </div>
+        
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
 <%= link_to "Checkout", new_charge_path %>
