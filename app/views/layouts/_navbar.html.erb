@@ -1,16 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <%= link_to "OneStopOnline", root_path, class: "navbar-brand", id: "logo" %>
+  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+    <br/>
       <li><%= link_to "Home", root_path %></li>
       <br/>
-      <li><%= link_to "Cart", order_items_path %></li> 
+      <li><%= link_to "Cart", order_items_path %></li>
+      <br/> 
       <li>
-        <a class="nav-link" href="#">Categories</a>
+        <%= link_to "Categories", "#" %>
       </li>
       
        

@@ -1,9 +1,20 @@
 body{
-  background-color: azure;
+  background-color: azure !important;
+  font-size: 2rem !important;
+  
 }
-
+.container {
+  background-color: azure;
+  font-size: 2rem;
+}
 @import "bootstrap-sprockets";
  @import "bootstrap";
+
+.navbar {
+  font-size: 2rem;
+  margin: 10px;
+  padding: 10px;
+}
 
  #logo {
   float: left;
@@ -27,4 +38,9 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
+}
+
+.col {
+  height:50px !important;
+  width: 50px !important;
 }
