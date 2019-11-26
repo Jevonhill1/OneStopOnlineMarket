@@ -16,6 +16,11 @@ body{
   padding: 10px;
 }
 
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
  #logo {
   float: left;
   font-size: 1.7em;
@@ -40,7 +45,14 @@ footer {
   color: #777;
 }
 
-.col {
+.product-list {
   height:50px !important;
   width: 50px !important;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
+

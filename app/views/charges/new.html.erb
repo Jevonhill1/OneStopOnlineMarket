@@ -24,7 +24,7 @@
   </article>
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-key="<%= ENV.fetch 'stripe_publishable_key' %>"
           data-description="Jevon's Art Prints"
           data-billing-address="true"
           data-shipping-address="true"
