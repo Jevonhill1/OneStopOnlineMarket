@@ -18,7 +18,7 @@
       <p class="alert"><%= alert %></p>
       <%= render 'layouts/navbar'%>
       <%= render 'layouts/footer'%>
-      
+      <%= link_to pluralize(current_cart.items_count, 'item'), cart_path %>
       <%= yield %>
     </div>
   </body>

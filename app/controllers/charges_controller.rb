@@ -5,7 +5,7 @@ class ChargesController < ApplicationController
   def create
   @amount = params[:amount]
 
-  @amount = @amount.gsub('$', '').gsub(',', '')
+  #@amount = @amount.gsub('$', '').gsub(',', '')
 
   begin
     @amount = Float(@amount).round(2)

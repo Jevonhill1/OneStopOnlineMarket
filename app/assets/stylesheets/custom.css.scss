@@ -1,11 +1,16 @@
-body{
-  background-color: azure !important;
+ html, body {
+   height: 100%;
+ }
+ 
+ body{
+  background-color: aqua !important;
   font-size: 2rem !important;
-  
+  color: fuchsia !important;
 }
 .container {
   background-color: azure;
   font-size: 2rem;
+  margin-bottom: 50px;
 }
 @import "bootstrap-sprockets";
  @import "bootstrap";
@@ -24,7 +29,7 @@ body{
  #logo {
   float: left;
   font-size: 1.7em;
-  color: #08088A;
+  color: fuchsia;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
@@ -42,7 +47,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  color: fuchsia;
 }
 
 .product-list {
@@ -56,3 +61,21 @@ footer {
   backface-visibility: hidden;
 }
 
+.align-items-start {
+  background-color: aqua;
+}
+
+img {
+  max-height: 500px !important;
+  max-width: 500px !important;
+}
+
+li {
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+div.container {
+  background-color: aqua;
+}
