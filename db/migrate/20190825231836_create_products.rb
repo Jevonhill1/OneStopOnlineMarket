@@ -4,6 +4,7 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.string :title, null: false
       t.text :description
       t.decimal :price, null: false, precision: 15, scale: 2
+      t.decimal :weight, null: true
 
       t.timestamps
     end

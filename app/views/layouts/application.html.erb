@@ -13,15 +13,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   </head>
 
-  <body>
-    <%= image_tag src="onestop_logo.png" %>
-    <p>
-      <%= link_to "Home", root_path %> |
-      <%= link_to pluralize(current_cart.items_count, 'item'), cart_path %>
-    </p>
+  <body class="weed">
+      <%= image_tag src="onestop_logo.png" %>
+         
 
-    <hr />
-
+        <p>
+          <%= link_to "Home", root_path %> |
+          <%= link_to pluralize(current_cart.items_count, 'item'), cart_path %>
+          <%= image_tag, src="cart-icon.jpg" %>
+          
+        </p>
+      
+        <hr />
+    
     <%= yield %>
   </body>
 </html>

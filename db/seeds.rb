@@ -5,33 +5,23 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-PRODUCTS_COUNT = 100
-
-MAX_CATEGORIES = 3
-
-CATEGORIES = Faker::Base.fetch_all('commerce.department').map do |title|
-  Category.find_or_create_by!(title: title)
-end
-
-PRODUCTS_COUNT.times do
-
-  title = ''
-
-  # generate unique title
-  loop do
-    title = Faker::Commerce.product_name
-    break unless Product.exists?(title: title)
-  end
-
-  product = Product.new(
-    title: title,
-    price: Faker::Commerce.price
-  )
-
-  num_categories = 1 + rand(MAX_CATEGORIES)
-  product.categories << CATEGORIES.sample(num_categories)
-
-  product.save!
-
-end
+product = Product.create([
+{
+  product_title: "Atlantis (All Kush 47)",
+  product_price: 60.00,
+  product_weight: 3.5,
+  product_description: "Featuring a very strong THC potency potential, 
+  Atlantis is a All Kush 47 sativa dominant hybrid. 
+  Known for its Lime green with dark green accents, 
+  light orange hairs, moderate dusting of trichomes, 
+  leafy appearance and elongated buds, 
+  this strain has earthy and woody notes,
+  courtesy of caryophyllene and myrcene terpenes.",
+  product_thumbnail: File.open(Rails.root.join('public', 'images', 
+  'Atlantis-Flower---Bud_500x.png'))
+  img_tag: File.open(Rails.root.join('public', 'images', '
+  Atlantis-Flower---Bud_500x.png')),
+  product_company: 'Hexo',
+  product_category: "Dried Flowers"
+}
+])
