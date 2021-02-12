@@ -19,8 +19,7 @@ product = Product.create([
   courtesy of caryophyllene and myrcene terpenes.",
   product_thumbnail: File.open(Rails.root.join('public', 'images', 
   'Atlantis-Flower---Bud_500x.png'))
-  img_tag: File.open(Rails.root.join('public', 'images', '
-  Atlantis-Flower---Bud_500x.png')),
+  
   product_company: 'Hexo',
   product_category: "Dried Flowers"
 }
