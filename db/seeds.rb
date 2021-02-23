@@ -20,10 +20,7 @@ product = Product.create([
   product_thumbnail: File.open(Rails.root.join('public', 'images', 
   'Atlantis-Flower---Bud_500x.png'))
   
-<<<<<<< HEAD
   product_company: 'Hexo',
-=======
->>>>>>> create-user-table-model
   product_category: "Dried Flowers"
 }
 ])
